@@ -1,0 +1,47 @@
+.accordion {
+  /* Add your accordion styles here */
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb;
+  border-radius: 0px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin:px ;
+}
+
+.accordion-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.accordion-trigger:hover {
+  color: #4b5563;
+}
+
+.accordion-trigger::after {
+  content: '▼';
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+
+.accordion-item.open .accordion-trigger::after {
+  transform: rotate(-180deg);
+  color: #FF4400;
+}
+
+.accordion-content {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #6b7280;
+}
