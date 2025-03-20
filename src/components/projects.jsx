@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import {  Search } from "lucide-react"
+import { Search } from "lucide-react"
 import { useNavigate } from "react-router-dom";
-
+import React from 'react';
 
 export default function Projects() {
   const navigate = useNavigate();
