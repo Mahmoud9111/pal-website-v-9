@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { ChevronDown, Filter, Star, Search } from "lucide-react"
 import { useNavigate } from "react-router-dom";
+import React from 'react'
 
 export default function Projects() {
   const navigate = useNavigate();
@@ -49,8 +50,8 @@ export default function Projects() {
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
     {
-      id: 3,
-      name: "Al Barsha Third",
+      id: 4,
+      name: "Al Barsha Fourth",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
       rating: 4.98,
       price: 216,
@@ -62,8 +63,8 @@ export default function Projects() {
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
     {
-      id: 3,
-      name: "Al Barsha Third",
+      id: 5,
+      name: "Al Barsha Fifth",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
       rating: 4.98,
       price: 216,
@@ -75,8 +76,8 @@ export default function Projects() {
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
     {
-      id: 3,
-      name: "Al Barsha Third",
+      id: 6,
+      name: "Al Barsha Sixth",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
       rating: 4.98,
       price: 216,
@@ -86,8 +87,7 @@ export default function Projects() {
       area: "1,024 ft",
       parking: "Indoor",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
-    },
-    // Add more properties as needed
+    }
   ]
 
   const handlePropertyClick = (propertyId) => {

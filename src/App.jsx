@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from "./components/Home";
-import Projects from "./components/Projects";
+import Projects from './components/Projects';  // Updated import path with capital 'C'
 import Header from "./components/Header";
 import PropertyListing from './components/PropertyListing';
 import Footer from './components/Footer';
