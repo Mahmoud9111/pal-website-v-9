@@ -1,5 +1,5 @@
 import QA from "./QA";
-import Reviews from "@/components/Reviews";
+import Reviews from "./Reviews";
 import Hero from "./Hero";
 import Bradns from "./Brands";
 import ProjectsCard from "./ProjectsCard";
