@@ -3,7 +3,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from 'framer-motion' // Add this import
 
-const Reviews = [
+const reviewsData = [
   {
     quote: "Proactive customer management in Planhat has transformed our teams' operating performance.",
     author: "Alexey Smolyanyy",
@@ -36,7 +36,7 @@ export default function Reviews() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentReview((prev) => (prev + 1) % reviews.length)
+      setCurrentReview((prev) => (prev + 1) % reviewsData.length)
     }, 5000)
     return () => clearInterval(interval)
   }, [])
@@ -125,21 +125,21 @@ export default function Reviews() {
                   key={currentReview} 
                   className="flex-1 text-[2.75rem] leading-[1.2] tracking-tight animate-fadeSlide"
                 >
-                  "{reviews[currentReview].quote}"
+                  "{reviewsData[currentReview].quote}"
                 </blockquote>
                 <div 
                   key={`author-${currentReview}`} 
                   className="mt-8 animate-fadeSlide"
                 >
-                  <p className="text-xl font-medium">{reviews[currentReview].author}</p>
-                  <p className="text-zinc-600 text-lg">{reviews[currentReview].role}</p>
+                  <p className="text-xl font-medium">{reviewsData[currentReview].author}</p>
+                  <p className="text-zinc-600 text-lg">{reviewsData[currentReview].role}</p>
                 </div>
               </div>
 
               {/* Centered dots and link */}
               <div className="mt-8">
                 <div className="flex justify-center space-x-3 mb-8">
-                  {reviews.map((_, index) => (
+                  {reviewsData.map((_, index) => (
                     <button
                       key={index}
                       onClick={() => setCurrentReview(index)}
