@@ -1,20 +1,12 @@
-import React from "react";
-import { Building2, ArrowUpRight } from "lucide-react";
-import Earth from "./Earth";
-import PropertyListing from "./PorjectsPage/PropertyListing";
 import QA from "./QA";
-import Footer from "./Footer";
-import Slider from "./Slider";
-import Reviews from "./reviews";
+import Reviews from "./Reviews";
 import Hero from "./Hero";
-import Bradns from "./brands";
+import Bradns from "./Brands";
 import ProjectsCard from "./ProjectsCard";
-import Services from "./Services";
 import Facts from "./Facts";
 import Bento from "./Bento";
-import FooterImg from "./footerImg";
-import Services2 from "./Services2";
-import Services3 from "./services3";
+import FooterImg from "./FooterImg";
+import Services3 from "./Services3";
 export default function Home() {
   return (
     <>
