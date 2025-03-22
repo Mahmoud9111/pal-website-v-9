@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from "./components/Home";
-import Projects from './components/Projects.jsx';
+import Projects from './components/PorjectsPage/projects.jsx';
 import Header from "./components/Header";
-import PropertyListing from './components/PropertyListing';
+import PropertyListing from './components/PorjectsPage/PropertyListing.jsx';
 import Footer from './components/Footer';
 import AboutusPage from './components/AboutusPage';
 import { ThemeProvider } from './contexts/theme-context';

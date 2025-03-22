@@ -1,7 +1,7 @@
 import React from "react";
 import { Building2, ArrowUpRight } from "lucide-react";
 import Earth from "./Earth";
-import PropertyListing from "./PropertyListing";
+import PropertyListing from "./PorjectsPage/PropertyListing";
 import QA from "./QA";
 import Footer from "./Footer";
 import Slider from "./Slider";
