@@ -3,7 +3,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from 'framer-motion' // Add this import
 
-const reviews = [
+const Reviews = [
   {
     quote: "Proactive customer management in Planhat has transformed our teams' operating performance.",
     author: "Alexey Smolyanyy",
