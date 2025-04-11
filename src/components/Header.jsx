@@ -1,7 +1,7 @@
 import { ChevronDown, Search } from "lucide-react"
 import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -119,42 +119,50 @@ export default function Header() {
             </button>
           </div>
         </div>
-        {isMenuOpen && (
-          <div className="md:hidden fixed inset-x-0 top-[5.5rem] p-4 animate-in slide-in-from-top-5 duration-300">
-            <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-lg space-y-4">
-              <Link 
-                to="/home" 
-                className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
-              >
-                Home
-              </Link>
-              <Link 
-                to="/projects" 
-                className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
-              >
-                Projects
-              </Link>
-              <Link 
-                to="/aboutus" 
-                className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
-              >
-                About us
-              </Link>
-              <Link 
-                to="/contactus" 
-                className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
-              >
-                Contact us
-              </Link>
-              <Link
-                to="/contact"
-                className="block px-4 py-3 text-sm text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-colors text-center"
-              >
-                Contact us
-              </Link>
-            </div>
-          </div>
-        )}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div 
+              className="md:hidden fixed inset-x-0 top-[5.5rem] p-4"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-lg space-y-4">
+                <Link 
+                  to="/home" 
+                  className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
+                >
+                  Home
+                </Link>
+                <Link 
+                  to="/projects" 
+                  className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
+                >
+                  Projects
+                </Link>
+                <Link 
+                  to="/aboutus" 
+                  className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
+                >
+                  About us
+                </Link>
+                <Link 
+                  to="/contactus" 
+                  className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
+                >
+                  Contact us
+                </Link>
+                <Link
+                  to="/contact"
+                  className="block px-4 py-3 text-sm text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-colors text-center"
+                >
+                  Contact us
+                </Link>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   )

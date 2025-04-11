@@ -1,4 +1,3 @@
-import QA from "./QA";
 import Reviews from "./Reviews";
 import Hero from "./Hero";
 import Bradns from "./Brands";
@@ -7,7 +6,7 @@ import Facts from "./Facts";
 import Bento from "./Bento";
 import FooterImg from "./FooterImg";
 import Services3 from "./Services3";
-
+import QA2 from "./QA2";
 export default function Home() {
   return (
     <>
@@ -18,7 +17,7 @@ export default function Home() {
       <ProjectsCard/>   
       <Reviews/>    
       <Facts/>
-      <QA />
+      <QA2/>
 
       <FooterImg/>
 
