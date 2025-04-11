@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 const cards = [
   {
     title: 'Fight deforestation',
-    image: '/public/images/Projects/488/1.jpg',
+    image: '/images/Projects/488/1.jpg',
   },
   {
     title: 'Invest in ocean health',
-    image: '/public/images/Projects/399/1.jpg',
+    image: '/images/Projects/399/1.jpg',
   },
   {
     title: 'Support animal welfare',
