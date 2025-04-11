@@ -11,7 +11,7 @@ export default function Bento() {
 
   const items = [    
     { title: 'Technology', subtitle: 'Future innovations', image: '/public/images/pala_img2.jpg' },
-    { title: 'Food', subtitle: 'Culinary delights', image: '/public/images/pala_img1.jpg' },
+    { title: 'Food', subtitle: 'Culinary delights', image: '/public/images/Projects/506/1.jpg' },
   ];
 
   return (

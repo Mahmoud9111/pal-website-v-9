@@ -46,9 +46,15 @@ export default function PropertyListing() {
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
     2: {
-      title: "Yasmin Villa - Arabian Hill",
+      title: "Drainage Improvements",
       images: [
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture33.PNG-JyfMV9FlIyUOIY39VdQ7dCs4mTPSFo.png",
+        "/public/images/Projects/488/1.jpg",
+        "/public/images/Projects/488/2.jpg",
+        "/public/images/Projects/488/3.jpg",
+        "/public/images/Projects/488/4.jpg",
+        "/public/images/Projects/488/5.jpg",
+        "/public/images/Projects/488/6.jpg",
+
         // ...more images...
       ],
       bedrooms: "Four",
@@ -57,6 +63,196 @@ export default function PropertyListing() {
       parking: "Indoor",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
+
+    3: {
+      title: "Pave. Maint and Repair",
+      images: [
+        "/public/images/Projects/506/5.jpg",
+        "/public/images/Projects/506/2.jpg",
+        "/public/images/Projects/506/3.jpg",
+        "/public/images/Projects/506/4.jpg",
+        "/public/images/Projects/506/1.jpg",
+        // ...more images...
+      ],
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,33024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    4: {
+      title: "Pave. Maint and Repair",
+      images: [
+        "/public/images/Projects/460/1.jpeg",
+        "/public/images/Projects/460/2.jpeg",
+        "/public/images/Projects/460/3.jpeg",
+
+        // ...more images...
+      ],
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,33024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    5: {
+      title: "Pave. Maint and Repair",
+      images: [
+        "/public/images/Projects//408/1.JPG",
+        "/public/images/Projects//408/2.JPG",
+        "/public/images/Projects//408/3.JPG",
+        "/public/images/Projects//408/4.JPG",
+
+        // ...more images...
+      ],
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,33024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    6: {
+      title: "Conc. Barriers, MGS, Gore Paving",
+      images: [
+        "/public/images/Projects/354/1.jpg",
+        "/public/images/Projects/354/2.jpg",
+        "/public/images/Projects/354/3.jpg",
+        "/public/images/Projects/354/4.jpg",
+        "/public/images/Projects/354/5.jpeg",
+
+
+        // ...more images...
+      ],
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,33024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    7: {
+      title: "Remove X-Lite Terminals",
+      images: [
+        "/public/images/Projects/361/1.JPG",
+        "/public/images/Projects/361/2.JPG",
+        "/public/images/Projects/361/3.JPG",
+        "/public/images/Projects/361/4.JPG",
+        "/public/images/Projects/361/5.JPG",
+
+
+
+        // ...more images...
+      ],
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,33024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    8: {
+      title: "Lekos Coronado",
+      images: [
+        "/public/images/Projects/364/3.JPG",
+        "/public/images/Projects/364/2.JPG",
+        "/public/images/Projects/364/1.JPG",
+        "/public/images/Projects/364/4.JPG",
+
+
+
+        // ...more images...
+      ],
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,33024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    9: {
+      title: "Local St Rehab 2020",
+      images: [
+        "/public/images/Projects/394/1.JPG",
+        "/public/images/Projects/394/2.JPG",
+        "/public/images/Projects/394/3.JPG",
+        "/public/images/Projects/394/4.JPG",
+
+
+
+        // ...more images...
+      ],
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,33024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    10: {
+      title: "SR-163 x Ash",
+      images: [
+        "/public/images/Projects/399/1.jpg",
+        "/public/images/Projects/399/2.jpg",
+        "/public/images/Projects/399/3.jpg",
+        "/public/images/Projects/399/4.jpg",
+        "/public/images/Projects/399/5.jpg",
+
+
+
+        // ...more images...
+      ],
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,33024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    11: {
+      title: "FY 21-22 Pav. Mainte Repairs",
+      images: [
+        "/public/images/Projects/479/1.jpeg",
+        "/public/images/Projects/479/2.jpeg",
+        "/public/images/Projects/479/3.jpeg",
+        "/public/images/Projects/479/4.jpeg",
+        "/public/images/Projects/479/5.jpeg",
+
+
+
+        // ...more images...
+      ],
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,33024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    12: {
+      title: "Traffic Calming on Amargosa Dr.",
+      images: [
+        "/public/images/Projects/412/1.jpeg",
+        "/public/images/Projects/412/2.jpeg",
+        "/public/images/Projects/412/3.jpeg",
+        "/public/images/Projects/412/4.jpeg",
+
+
+
+        // ...more images...
+      ],
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,33024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+    
+
+
+
     // Add more properties as needed
   };
 
@@ -129,6 +325,29 @@ export default function PropertyListing() {
           ))}
         </div>
       </div>
+
+
+            {/* Thumbnail Gallery */}
+            <div className="overflow-x-auto">
+        <div className="flex gap-2 pb-2">
+          {property.images.map((src, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImage(index)}
+              className={`flex-shrink-0 ${
+                currentImage === index ? 'ring-2 ring-blue-500' : ''
+              }`}
+            >
+              <img
+                src={src}
+                alt={`Thumbnail ${index + 1}`}
+                className="h-20 w-32 object-cover rounded-lg"
+              />
+            </button>
+          ))}
+        </div>
+      </div>
+
 
       {/* Property Details Section */}
       <div className="space-y-6">

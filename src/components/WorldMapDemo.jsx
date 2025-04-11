@@ -1,9 +1,6 @@
 "use client";
-import WorldMap from "@/components/ui/world-map";
-import { motion } from "motion/react";
-import { Card } from "@/components/ui/card"; // Add this import
-
-
+import { useState, useEffect } from "react";
+import emailjs from '@emailjs/browser';
 
 const contactInfo = [
   {
@@ -40,49 +37,121 @@ const contactInfo = [
   },
 ];
 
-
-
 export function WorldMapDemo() {
+  const location = {
+    name: "Our Office",
+    x: 11, // Changed from 30 to 80 - moves dot more to the right
+    y: 35  // Changed from 40 to 25 - moves dot more to the top
+  };
+
+  useEffect(() => {
+    emailjs.init("nowSj9JnTDWhSMmXI");
+  }, []);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.send(
+        "service_i77m8tp",
+        "template_ak5v2hg",
+        formData
+      );
+      
+      alert('Message sent successfully!');
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Failed to send message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
-      <div className="px-8 mt-32 mb-12 max-w-[2036px] mx-auto">
-        <h2 className="text-4xl font-bold mb-4">
-          Global Reach
+      <div className="px-8 mt-32 mb-12 max-w-[1600px] mx-auto">
+        <h2 className="text-4xl font-bold mb-4 ">
+          Get in Touch
         </h2>
         <p className="text-lg text-neutral-700">
           Connect with us from anywhere in the world. We're here to serve you globally.
         </p>
       </div>
-      <div className="py-20 dark:bg-white bg-white max-w-[2036px] mx-auto shadow-2xl rounded-2xl">
+      <div className="py-20 dark:bg-white bg-white max-w-[1600px] mx-auto shadow-2xl rounded-2xl">
         <div className="max-w-[2036px] mx-auto">
-          <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 px-8">
-            <div className="h-[600px]">
-              <WorldMap
-                dots={[
-                  {
-                    start: {
-                      lat: 64.2008,
-                      lng: -149.4937,
-                    }, // Alaska (Fairbanks)
-                    end: {
-                      lat: 34.0522,
-                      lng: -118.2437,
-                    }, // Los Angeles
-                  },
-                ]}
-              />
+          <div className="w-full px-8 flex flex-col md:flex-row gap-8 items-center">
+            {/* Image Column */}
+            <div className="w-full md:w-1/2 relative">
+              <div className="relative">
+                <img 
+                  src="./public/images/World Map.png" 
+                  alt="Contact Us" 
+                  className="w-full h-[500px] object-cover rounded-lg"
+                />
+                <div
+                  className="absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer group"
+                  style={{
+                    left: `${location.x}%`,
+                    top: `${location.y}%`,
+                  }}
+                >
+                  {/* Animated ring centered under dot */}
+                  <div className="absolute w-8 h-8 bg-orange-500/60 rounded-full animate-ping -translate-x-1/4 -translate-y-1/4" />
+                  {/* Main dot */}
+                  <div className="relative w-4 h-4 bg-orange-500 rounded-full z-10" />
+                  {/* Enhanced Tooltip */}
+                  <div className="absolute left-6 top-0 bg-white shadow-xl rounded-lg p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 w-64">
+                    <div className="flex items-start gap-3">
+                      <div className="p-2 bg-orange-100 rounded-lg">
+                        <svg className="w-5 h-5 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M21 19H23V21H1V19H3V4C3 3.44772 3.44772 3 4 3H14C14.5523 3 15 3.44772 15 4V19H19V11H17V9H20C20.5523 9 21 9.44772 21 10V19ZM5 5V19H13V5H5ZM7 11H11V13H7V11ZM7 7H11V9H7V7Z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-gray-900">{location.name}</h3>
+                        <p className="text-sm text-gray-600 mt-1">22B Elementary Avenue, NY</p>
+                        <div className="mt-2 text-sm text-orange-500">
+                          Mon-Fri: 9:00 AM - 6:00 PM
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="flex items-start h-[600px]">
-              <form className="w-full space-y-6 p-8 rounded-lg">
+            
+            {/* Form Column */}
+            <div className="w-full md:w-1/2">
+              <form onSubmit={handleSubmit} className="w-full space-y-6 p-8 rounded-lg">
                 <h3 className="text-3xl font-semibold dark:text-black text-black mb-6">
                   Get in Touch
                 </h3>
                 <div>
                   <label className="block text-sm font-medium dark:text-neutral-800 text-neutral-800 mb-1">
                     Name
-                  </label>
+                  </label> 
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                     className="w-full px-4 py-2 rounded-md border border-neutral-800 dark:border-neutral-800 bg-transparent"
                   />
                 </div>
@@ -92,6 +161,10 @@ export function WorldMapDemo() {
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     className="w-full px-4 py-2 rounded-md border border-neutral-800 dark:border-neutral-800 bg-transparent"
                   />
                 </div>
@@ -100,15 +173,20 @@ export function WorldMapDemo() {
                     Message
                   </label>
                   <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
                     rows={4}
                     className="w-full px-4 py-2 rounded-md border border-neutral-800 dark:border-neutral-800 bg-transparent"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-black  text-white py-2 rounded-md hover:opacity-90 transition-opacity"
+                  disabled={isSubmitting}
+                  className="w-full bg-orange-500 text-white py-2 rounded-md hover:opacity-90 transition-opacity disabled:opacity-50"
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>
@@ -118,48 +196,41 @@ export function WorldMapDemo() {
 
       {/* Google Maps Card */}
       <div className="px-8 mb-12 mt-32 max-w-[2036px] mx-auto">
-
-
         <section className="bg-white py-16">
-      <div className="container mx-auto px-6 lg:px-8 max-w-[1536px]">
-        {/* Title and Description */}
-        <div className="mb-12 text-left">
-          <h2 className="text-lg font-semibold text-orange-500 uppercase">Reach Out To Us</h2>
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            We’d Love to Hear From You
-          </h1>
-          <p className="mt-4 text-gray-500">
-            Or just reach out manually to{' '}
-            <a href="mailto:hello@slothui.com" className="text-orange-500 underline">
-              hello@slothui.com
-            </a>
-          </p>
-        </div>
+          <div className="container mx-auto px-6 lg:px-8 max-w-[1536px]">
+            {/* Title and Description */}
+            <div className="mb-12 text-left">
+              <h2 className="text-lg font-semibold text-orange-500 uppercase">Reach Out To Us</h2>
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                We’d Love to Hear From You
+              </h1>
 
-        {/* Contact Information Cards */}
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 text-left">
-          {contactInfo.map((info, index) => (
-            <div key={index} className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="flex flex-col items-start mb-4">
-                <info.icon className="w-9 h-9 text-orange-500" />
-                <h3 className="text-xl font-semibold text-gray-900">{info.title}</h3>
-              </div>
-              <p className="text-gray-500">{info.description}</p>
-              {info.link ? (
-                <a
-                  href={info.link}
-                  className="mt-4 block text-orange-500 hover:text-orange-400"
-                >
-                  {info.linkText}
-                </a>
-              ) : (
-                <p className="mt-4 text-orange-500">{info.linkText}</p>
-              )}
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
+
+            {/* Contact Information Cards */}
+            <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 text-left">
+              {contactInfo.map((info, index) => (
+                <div key={index} className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+                  <div className="flex flex-col items-start mb-4">
+                    <info.icon className="w-9 h-9 text-orange-500" />
+                    <h3 className="text-xl font-semibold text-gray-900">{info.title}</h3>
+                  </div>
+                  <p className="text-gray-500">{info.description}</p>
+                  {info.link ? (
+                    <a
+                      href={info.link}
+                      className="mt-4 block text-orange-500 hover:text-orange-400"
+                    >
+                      {info.linkText}
+                    </a>
+                  ) : (
+                    <p className="mt-4 text-orange-500">{info.linkText}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );

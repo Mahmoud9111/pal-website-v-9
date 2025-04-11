@@ -12,10 +12,8 @@ export default function Projects() {
   const properties = [
     {
       id: 1,
-      name: "Yasmin Villa - Arabian Hill",
+      name: "Pala Vista",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
-      rating: 4.98,
-      price: 216,
       image: "/public/images/pala_img2.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
@@ -25,11 +23,10 @@ export default function Projects() {
     },
     {
       id: 2,
-      name: "Abu Hail - Arabian Ran",
+      name: "Drainage Improvements",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
-      rating: 4.98,
-      price: 216,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture67.PNG-XCPaEon8hKlg03qewaBFDMS0yyd6HU.png",
+
+      image: "/public/images/Projects/488/1.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -38,11 +35,9 @@ export default function Projects() {
     },
     {
       id: 3,
-      name: "Al Barsha Third",
+      name: "Pave. Maint and Repair",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
-      rating: 4.98,
-      price: 216,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture67.PNG-XCPaEon8hKlg03qewaBFDMS0yyd6HU.png",
+      image: "/public/images/Projects/506/5.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -51,11 +46,11 @@ export default function Projects() {
     },
     {
       id: 4,
-      name: "Al Barsha Fourth",
+      name: "Admin Front Entrance Concrete Repair",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
-      rating: 4.98,
-      price: 216,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture67.PNG-XCPaEon8hKlg03qewaBFDMS0yyd6HU.png",
+
+      image: "/public/images/Projects/460/1.jpeg",
+              
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -64,11 +59,10 @@ export default function Projects() {
     },
     {
       id: 5,
-      name: "Al Barsha Fifth",
+      name: "Pedestrian Mobility Sidewalk Project",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
-      rating: 4.98,
-      price: 216,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture67.PNG-XCPaEon8hKlg03qewaBFDMS0yyd6HU.png",
+
+      image: "/public/images/Projects/408/1.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -77,17 +71,97 @@ export default function Projects() {
     },
     {
       id: 6,
-      name: "Al Barsha Sixth",
+      name: "Conc. Barriers, MGS, Gore Paving",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
-      rating: 4.98,
-      price: 216,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture67.PNG-XCPaEon8hKlg03qewaBFDMS0yyd6HU.png",
+
+      image: "/public/images/Projects/354/1.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
       parking: "Indoor",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
-    }
+    },
+
+    {
+      id: 7,
+      name: "Remove X-Lite Terminals",
+      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+
+      image: "/public/images/Projects/361/3.JPG",
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    {
+      id: 8,
+      name: "Lekos Coronado",
+      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+
+      image: "/public/images/Projects/364/3.JPG",
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    {
+      id: 9,
+      name: "Local St Rehab 2020",
+      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+
+      image: "/public/images/Projects/394/1.JPG",
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    {
+      id: 10,
+      name: "SR-163 x Ash",
+      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+
+      image: "/public/images/Projects/399/1.jpg",
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    {
+      id: 11,
+      name: "FY 21-22 Pav. Mainte Repairs",
+      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+
+      image: "/public/images/Projects/479/1.jpeg",
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+    {
+      id: 12,
+      name: "Traffic Calming on Amargosa Dr.",
+      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+
+      image: "/public/images/Projects/412/1.jpeg",
+      bedrooms: "Four",
+      bathrooms: "Three",
+      area: "1,024 ft",
+      parking: "Indoor",
+      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+    },
+
+
+
   ]
 
   const handlePropertyClick = (propertyId) => {
@@ -102,20 +176,19 @@ export default function Projects() {
     <div className="min-h-screen bg-gray-100 ">
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
-        <div className="text-center mb-12 mt-32">
+        <div className="mb-12 mt-32">
           <p className="text-gray-600 mb-4">Our recent projects</p>
           <h1 className="text-5xl font-bold">Best Properties of the years</h1>
         </div>
 
         {/* Search Section */}
         <div className="mb-8">
-          <h2 className="text-3xl font-bold mb-6">Rent a House in Dubai</h2>
-          <div className=" p-6 rounded-lg flex items-center justify-start">
-            <div className="relative w-full max-w-md">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-500" />
+          <div className="  rounded-lg flex items-center justify-start ">
+            <div className="relative w-full max-w-md bg-gray-100">
+              <Search className=" absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-900 " />
               <input
                 type="text"
-                className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full pl-10 pr-4 py-2 rounded-2xl border border-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-300"
                 placeholder="Search project name"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
