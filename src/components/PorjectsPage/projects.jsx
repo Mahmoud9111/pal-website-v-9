@@ -14,7 +14,7 @@ export default function Projects() {
       id: 1,
       name: "Pala Vista",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
-      image: "/public/images/pala_img2.jpg",
+      image: "/images/pala_img2.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -26,7 +26,7 @@ export default function Projects() {
       name: "Drainage Improvements",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
 
-      image: "/public/images/Projects/488/1.jpg",
+      image: "/images/Projects/488/1.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -37,7 +37,7 @@ export default function Projects() {
       id: 3,
       name: "Pave. Maint and Repair",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
-      image: "/public/images/Projects/506/5.jpg",
+      image: "/images/Projects/506/1.JPG",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -49,7 +49,7 @@ export default function Projects() {
       name: "Admin Front Entrance Concrete Repair",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
 
-      image: "/public/images/Projects/460/1.jpeg",
+      image: "/images/Projects/460/1.jpeg",
               
       bedrooms: "Four",
       bathrooms: "Three",
@@ -62,7 +62,7 @@ export default function Projects() {
       name: "Pedestrian Mobility Sidewalk Project",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
 
-      image: "/public/images/Projects/408/1.jpg",
+      image: "/images/Projects//408/1.JPG",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -74,7 +74,7 @@ export default function Projects() {
       name: "Conc. Barriers, MGS, Gore Paving",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
 
-      image: "/public/images/Projects/354/1.jpg",
+      image: "/images/Projects/354/1.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -87,7 +87,7 @@ export default function Projects() {
       name: "Remove X-Lite Terminals",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
 
-      image: "/public/images/Projects/361/3.JPG",
+      image: "/images/Projects/361/3.JPG",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -100,7 +100,7 @@ export default function Projects() {
       name: "Lekos Coronado",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
 
-      image: "/public/images/Projects/364/3.JPG",
+      image: "/images/Projects/364/3.JPG",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -113,7 +113,7 @@ export default function Projects() {
       name: "Local St Rehab 2020",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
 
-      image: "/public/images/Projects/394/1.JPG",
+      image: "/images/Projects/394/1.JPG",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -126,7 +126,7 @@ export default function Projects() {
       name: "SR-163 x Ash",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
 
-      image: "/public/images/Projects/399/1.jpg",
+      image: "/images/Projects/399/1.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -139,7 +139,7 @@ export default function Projects() {
       name: "FY 21-22 Pav. Mainte Repairs",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
 
-      image: "/public/images/Projects/479/1.jpeg",
+      image: "/images/Projects/479/1.jpeg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",
@@ -152,7 +152,7 @@ export default function Projects() {
       name: "Traffic Calming on Amargosa Dr.",
       location: "Apartment in Dubai 2BR Apartment in Al Barsha",
 
-      image: "/public/images/Projects/412/1.jpeg",
+      image: "/images/Projects/412/1.jpeg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",

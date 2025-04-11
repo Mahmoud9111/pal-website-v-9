@@ -12,7 +12,7 @@ const cards = [
   },
   {
     title: 'Support animal welfare',
-    image: '/public/images/Projects/460/1.jpeg',
+    image: '/images/Projects/460/1.jpeg',
   },
   
 ]

@@ -100,7 +100,7 @@ export function WorldMapDemo() {
             <div className="w-full md:w-1/2 relative">
               <div className="relative">
                 <img 
-                  src="./public/images/World Map.png" 
+                  src="/images/World Map.png" 
                   alt="Contact Us" 
                   className="w-full h-[500px] object-cover rounded-lg"
                 />

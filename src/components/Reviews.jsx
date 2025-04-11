@@ -70,7 +70,7 @@ export default function Reviews() {
           >
             <div className="relative aspect-square w-full">
               <img
-                src="/public/images/6.jpg"
+                src="/images/6.jpg"
                 alt="Platform interface"
                 className="h-full w-full object-cover opacity-80"
               />

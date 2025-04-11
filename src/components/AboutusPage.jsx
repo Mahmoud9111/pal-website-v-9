@@ -37,7 +37,7 @@ export default function AboutSection() {
           }}
         >
           <img
-            src="/public/images/5.jpg"
+            src="/images/5.jpg"
             alt="About us header image"
             className="w-screen h-full object-cover transition-all duration-500 ease-out"
             style={{ borderRadius: `${borderRadius}px` }}

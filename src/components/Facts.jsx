@@ -95,7 +95,7 @@ export default function Facts() {
           
           <div className="bg-white rounded-xl shadow-lg">
             <img
-              src="/public/images/5.jpg"
+              src="/images/5.jpg"
               alt="Modern House"
               className="w-full rounded-lg"
             />

@@ -7,7 +7,7 @@ const FooterImg = () => {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/public/images/footerimg4.png')" }}
+        style={{ backgroundImage: "url('/images/footerimg4.png')" }}
       ></div>
       
       {/* Overlay */}

@@ -48,12 +48,12 @@ export default function PropertyListing() {
     2: {
       title: "Drainage Improvements",
       images: [
-        "/public/images/Projects/488/1.jpg",
-        "/public/images/Projects/488/2.jpg",
-        "/public/images/Projects/488/3.jpg",
-        "/public/images/Projects/488/4.jpg",
-        "/public/images/Projects/488/5.jpg",
-        "/public/images/Projects/488/6.jpg",
+        "/images/Projects/488/1.jpg",
+        "/images/Projects/488/2.jpg",
+        "/images/Projects/488/3.jpg",
+        "/images/Projects/488/4.jpg",
+        "/images/Projects/488/5.jpg",
+        "/images/Projects/488/6.jpg",
 
         // ...more images...
       ],
@@ -67,11 +67,11 @@ export default function PropertyListing() {
     3: {
       title: "Pave. Maint and Repair",
       images: [
-        "/public/images/Projects/506/5.jpg",
-        "/public/images/Projects/506/2.jpg",
-        "/public/images/Projects/506/3.jpg",
-        "/public/images/Projects/506/4.jpg",
-        "/public/images/Projects/506/1.jpg",
+        "/images/Projects/506/1.JPG",
+        "/images/Projects/506/2.JPG",
+        "/images/Projects/506/3.JPG",
+        "/images/Projects/506/4.JPG",
+        "/images/Projects/506/5.JPG",
         // ...more images...
       ],
       bedrooms: "Four",
@@ -84,9 +84,9 @@ export default function PropertyListing() {
     4: {
       title: "Pave. Maint and Repair",
       images: [
-        "/public/images/Projects/460/1.jpeg",
-        "/public/images/Projects/460/2.jpeg",
-        "/public/images/Projects/460/3.jpeg",
+        "/images/Projects/460/1.jpeg",
+        "/images/Projects/460/2.jpeg",
+        "/images/Projects/460/3.jpeg",
 
         // ...more images...
       ],
@@ -100,10 +100,10 @@ export default function PropertyListing() {
     5: {
       title: "Pave. Maint and Repair",
       images: [
-        "/public/images/Projects//408/1.JPG",
-        "/public/images/Projects//408/2.JPG",
-        "/public/images/Projects//408/3.JPG",
-        "/public/images/Projects//408/4.JPG",
+        "/images/Projects//408/1.JPG",
+        "/images/Projects//408/2.JPG",
+        "/images/Projects//408/3.JPG",
+        "/images/Projects//408/4.JPG",
 
         // ...more images...
       ],
@@ -117,11 +117,11 @@ export default function PropertyListing() {
     6: {
       title: "Conc. Barriers, MGS, Gore Paving",
       images: [
-        "/public/images/Projects/354/1.jpg",
-        "/public/images/Projects/354/2.jpg",
-        "/public/images/Projects/354/3.jpg",
-        "/public/images/Projects/354/4.jpg",
-        "/public/images/Projects/354/5.jpeg",
+        "/images/Projects/354/1.jpg",
+        "/images/Projects/354/2.jpg",
+        "/images/Projects/354/3.JPG",
+        "/images/Projects/354/4.jpg",
+        "/images/Projects/354/5.jpeg",
 
 
         // ...more images...
@@ -136,11 +136,11 @@ export default function PropertyListing() {
     7: {
       title: "Remove X-Lite Terminals",
       images: [
-        "/public/images/Projects/361/1.JPG",
-        "/public/images/Projects/361/2.JPG",
-        "/public/images/Projects/361/3.JPG",
-        "/public/images/Projects/361/4.JPG",
-        "/public/images/Projects/361/5.JPG",
+        "/images/Projects/361/1.JPG",
+        "/images/Projects/361/2.JPG",
+        "/images/Projects/361/3.JPG",
+        "/images/Projects/361/4.JPG",
+        "/images/Projects/361/5.JPG",
 
 
 
@@ -156,10 +156,10 @@ export default function PropertyListing() {
     8: {
       title: "Lekos Coronado",
       images: [
-        "/public/images/Projects/364/3.JPG",
-        "/public/images/Projects/364/2.JPG",
-        "/public/images/Projects/364/1.JPG",
-        "/public/images/Projects/364/4.JPG",
+        "/images/Projects/364/3.JPG",
+        "/images/Projects/364/2.JPG",
+        "/images/Projects/364/1.JPG",
+        "/images/Projects/364/4.JPG",
 
 
 
@@ -175,10 +175,10 @@ export default function PropertyListing() {
     9: {
       title: "Local St Rehab 2020",
       images: [
-        "/public/images/Projects/394/1.JPG",
-        "/public/images/Projects/394/2.JPG",
-        "/public/images/Projects/394/3.JPG",
-        "/public/images/Projects/394/4.JPG",
+        "/images/Projects/394/1.JPG",
+        "/images/Projects/394/2.JPG",
+        "/images/Projects/394/3.JPG",
+        "/images/Projects/394/4.JPG",
 
 
 
@@ -194,11 +194,11 @@ export default function PropertyListing() {
     10: {
       title: "SR-163 x Ash",
       images: [
-        "/public/images/Projects/399/1.jpg",
-        "/public/images/Projects/399/2.jpg",
-        "/public/images/Projects/399/3.jpg",
-        "/public/images/Projects/399/4.jpg",
-        "/public/images/Projects/399/5.jpg",
+        "/images/Projects/399/1.jpg",
+        "/images/Projects/399/2.jpg",
+        "/images/Projects/399/3.jpg",
+        "/images/Projects/399/4.jpg",
+        "/images/Projects/399/5.jpg",
 
 
 
@@ -214,11 +214,11 @@ export default function PropertyListing() {
     11: {
       title: "FY 21-22 Pav. Mainte Repairs",
       images: [
-        "/public/images/Projects/479/1.jpeg",
-        "/public/images/Projects/479/2.jpeg",
-        "/public/images/Projects/479/3.jpeg",
-        "/public/images/Projects/479/4.jpeg",
-        "/public/images/Projects/479/5.jpeg",
+        "/images/Projects/479/1.jpeg",
+        "/images/Projects/479/2.jpeg",
+        "/images/Projects/479/3.jpeg",
+        "/images/Projects/479/4.jpeg",
+        "/images/Projects/479/5.jpeg",
 
 
 
@@ -234,10 +234,10 @@ export default function PropertyListing() {
     12: {
       title: "Traffic Calming on Amargosa Dr.",
       images: [
-        "/public/images/Projects/412/1.jpeg",
-        "/public/images/Projects/412/2.jpeg",
-        "/public/images/Projects/412/3.jpeg",
-        "/public/images/Projects/412/4.jpeg",
+        "/images/Projects/412/1.jpeg",
+        "/images/Projects/412/2.jpeg",
+        "/images/Projects/412/3.jpeg",
+        "/images/Projects/412/4.jpeg",
 
 
 
