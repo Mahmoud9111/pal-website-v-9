@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import AboutusPage from './components/AboutusPage';
 import { ThemeProvider } from './contexts/theme-context';
 import { WorldMapDemo } from './components/WorldMapDemo';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function Layout({ children }) {
@@ -31,6 +32,7 @@ function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <div className="App">
           <Layout>
             <Routes>
@@ -40,6 +42,7 @@ function App() {
               <Route path="/property/:id" element={<PropertyListing />} />
               <Route path="/aboutus" element={<AboutusPage />} />
               <Route path="/contactus" element={<WorldMapDemo />} />
+              
 
 
             </Routes>

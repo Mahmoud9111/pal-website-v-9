@@ -7,6 +7,7 @@ import Facts from "./Facts";
 import Bento from "./Bento";
 import FooterImg from "./FooterImg";
 import Services3 from "./Services3";
+
 export default function Home() {
   return (
     <>
