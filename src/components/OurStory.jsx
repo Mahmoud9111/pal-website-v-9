@@ -7,8 +7,8 @@ export function TimelineDemo() {
       title: "2024",
       content: (
         <div className="max-w-[1536px]">
-          <p className="text-neutral-800 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          <p className="text-neutral-800 text-base md:text-lg font-medium mb-8">
+            Completed major highway rehabilitation project with innovative concrete solutions
           </p>
           <div>
             <img
@@ -25,13 +25,11 @@ export function TimelineDemo() {
       title: "Early 2023",
       content: (
         <div>
-          <p className="text-neutral-800 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+          <p className="text-neutral-800 text-base md:text-lg font-medium mb-8">
+            Expanded our paving operations with state-of-the-art equipment acquisition
           </p>
-          <p className="text-neutral-800 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+          <p className="text-neutral-800 text-base md:text-lg font-medium mb-8">
+            Successfully completed multiple commercial and industrial concrete projects across the region
           </p>
           <div>
             <img
@@ -45,27 +43,27 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Changelog",
+      title: "Achievements",
       content: (
         <div>
-          <p className="text-neutral-800 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+          <p className="text-neutral-800 text-base md:text-lg font-medium mb-4">
+            Key milestones in construction excellence
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 text-xs md:text-sm">
-              ✅ Card grid component
+            <div className="flex gap-2 items-center text-neutral-700 text-sm md:text-base">
+              ✅ Major highway reconstruction project
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 text-xs md:text-sm">
-              ✅ Startup template Aceternity
+            <div className="flex gap-2 items-center text-neutral-700 text-sm md:text-base">
+              ✅ Industrial concrete foundations
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 text-xs md:text-sm">
-              ✅ Random file upload lol
+            <div className="flex gap-2 items-center text-neutral-700 text-sm md:text-base">
+              ✅ Commercial parking facilities
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
+            <div className="flex gap-2 items-center text-neutral-700 text-sm md:text-base">
+              ✅ Municipal infrastructure upgrades
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
+            <div className="flex gap-2 items-center text-neutral-700 text-sm md:text-base">
+              ✅ Residential development projects
             </div>
           </div>
           <div>

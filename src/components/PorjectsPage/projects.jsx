@@ -8,6 +8,8 @@ import React from 'react';
 export default function Projects() {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("")
+  const [currentPage, setCurrentPage] = useState(1)
+  const projectsPerPage = 6
 
   const properties = [
     {
@@ -159,9 +161,6 @@ export default function Projects() {
       parking: "Indoor",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
-
-
-
   ]
 
   const handlePropertyClick = (propertyId) => {
@@ -172,8 +171,19 @@ export default function Projects() {
     property.name.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
+  // Pagination logic
+  const indexOfLastProject = currentPage * projectsPerPage
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage
+  const currentProjects = filteredProperties.slice(indexOfFirstProject, indexOfLastProject)
+  const totalPages = Math.ceil(filteredProperties.length / projectsPerPage)
+
+  const pageNumbers = []
+  for (let i = 1; i <= totalPages; i++) {
+    pageNumbers.push(i)
+  }
+
   return (
-    <div className="min-h-screen bg-gray-100 ">
+    <div className="min-h-screen bg-gray-100">
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
         <div className="mb-12 mt-32">
@@ -199,17 +209,17 @@ export default function Projects() {
 
         {/* Property Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-          {filteredProperties.map((property) => (
+          {currentProjects.map((property) => (
             <div 
               key={property.id} 
               className="bg-white rounded-2xl overflow-hidden shadow-lg border-1 border-gray-200 cursor-pointer"
               onClick={() => handlePropertyClick(property.id)}
             >
-              <div className="relative h-64 p-2">
+              <div className="relative h-64 p-2 overflow-hidden">
                 <img
                   src={property.image || "/placeholder.svg"}
                   alt={property.name}
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div className="p-6">
@@ -219,6 +229,46 @@ export default function Projects() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Pagination */}
+        <div className="flex justify-center mt-8">
+          <nav aria-label="Page navigation">
+            <ul className="inline-flex -space-x-px text-sm">
+              <li>
+                <button
+                  onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                  disabled={currentPage === 1}
+                  className="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 disabled:opacity-50"
+                >
+                  Previous
+                </button>
+              </li>
+              {pageNumbers.map(number => (
+                <li key={number}>
+                  <button
+                    onClick={() => setCurrentPage(number)}
+                    className={`flex items-center justify-center px-3 h-8 leading-tight border border-gray-300 
+                      ${currentPage === number 
+                        ? 'text-blue-600 bg-blue-50 hover:bg-blue-100 hover:text-blue-700'
+                        : 'text-gray-500 bg-white hover:bg-gray-100 hover:text-gray-700'
+                      }`}
+                  >
+                    {number}
+                  </button>
+                </li>
+              ))}
+              <li>
+                <button
+                  onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                  disabled={currentPage === totalPages}
+                  className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 disabled:opacity-50"
+                >
+                  Next
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
       </main>
     </div>

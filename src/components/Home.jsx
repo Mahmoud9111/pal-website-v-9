@@ -1,6 +1,5 @@
 import Reviews from "./Reviews";
 import Hero from "./Hero";
-import Bradns from "./Brands";
 import ProjectsCard from "./ProjectsCard";
 import Facts from "./Facts";
 import Bento from "./Bento";
@@ -11,7 +10,6 @@ export default function Home() {
   return (
     <>
       <Hero/>
-      <Bradns/>
       <Services3/>
       <Bento/>
       <ProjectsCard/>   
