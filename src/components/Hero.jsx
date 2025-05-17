@@ -59,7 +59,7 @@ Paving the Way Where Progress Begins
                   </p>
                   <button className="group relative bg-transparent text-white hover:bg-white/5 rounded-full px-2.5 sm:px-3 py-2.5 sm:py-3 text-base sm:text-lg font-medium transition-all duration-300 hover:shadow-lg backdrop-blur-md border border-white/10 flex items-center justify-center">
                     Request a Quote
-                    <span className="ml-2 bg-orange-600 rounded-full p-1.5 sm:p-2 inline-flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                    <span className="ml-2 bg-blue-700 rounded-full p-1.5 sm:p-2 inline-flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                       <ArrowUpRight className="h-5 w-5 sm:h-6 sm:w-6" />
                     </span>
                   </button>

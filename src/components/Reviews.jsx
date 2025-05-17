@@ -87,7 +87,7 @@ export default function Reviews() {
             <div className="mt-12 flex justify-center w-full">
               <button className="group relative bg-transparent text-white hover:bg-white/5 rounded-full px-6 sm:px-4 py-3 sm:py-2 text-base sm:text-lg font-medium transition-all duration-300 hover:shadow-lg backdrop-blur-md border border-white/10 flex items-center justify-center">
                 Request a demo
-                <span className="ml-2 bg-orange-600 rounded-full p-2 sm:p-3 inline-flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                <span className="ml-2 bg-blue-700 rounded-full p-2 sm:p-3 inline-flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                   <ArrowUpRight className="h-4 w-4 sm:h-5 sm:w-5" />
                 </span>
               </button>
@@ -144,14 +144,14 @@ export default function Reviews() {
                       key={index}
                       onClick={() => setCurrentReview(index)}
                       className={`h-1.5 rounded-full transition-all duration-300 ${
-                        currentReview === index ? "w-8 h-2 bg-orange-500" : "w-8 h-2 bg-zinc-200"
+                        currentReview === index ? "w-8 h-2 bg-blue-500" : "w-8 h-2 bg-zinc-200"
                       }`}
                     />
                   ))}
                 </div>
                 <Button
                   variant="link"
-                  className="group w-full justify-center text-orange-500 hover:text-orange-600 hover:no-underline"
+                  className="group w-full justify-center text-blue-500 hover:text-blue-600 hover:no-underline"
                 >
                   Read impact study
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

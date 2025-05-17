@@ -15,7 +15,7 @@ export default function Projects() {
     {
       id: 1,
       name: "Pala Vista",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
       image: "/images/pala_img2.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
@@ -26,7 +26,7 @@ export default function Projects() {
     {
       id: 2,
       name: "Drainage Improvements",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
 
       image: "/images/Projects/488/1.jpg",
       bedrooms: "Four",
@@ -38,7 +38,7 @@ export default function Projects() {
     {
       id: 3,
       name: "Pave. Maint and Repair",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
       image: "/images/Projects/506/1.JPG",
       bedrooms: "Four",
       bathrooms: "Three",
@@ -49,7 +49,7 @@ export default function Projects() {
     {
       id: 4,
       name: "Admin Front Entrance Concrete Repair",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
 
       image: "/images/Projects/460/1.jpeg",
               
@@ -62,7 +62,7 @@ export default function Projects() {
     {
       id: 5,
       name: "Pedestrian Mobility Sidewalk Project",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
 
       image: "/images/Projects//408/1.JPG",
       bedrooms: "Four",
@@ -74,7 +74,7 @@ export default function Projects() {
     {
       id: 6,
       name: "Conc. Barriers, MGS, Gore Paving",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
 
       image: "/images/Projects/354/1.jpg",
       bedrooms: "Four",
@@ -87,7 +87,7 @@ export default function Projects() {
     {
       id: 7,
       name: "Remove X-Lite Terminals",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
 
       image: "/images/Projects/361/3.JPG",
       bedrooms: "Four",
@@ -100,7 +100,7 @@ export default function Projects() {
     {
       id: 8,
       name: "Lekos Coronado",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
 
       image: "/images/Projects/364/3.JPG",
       bedrooms: "Four",
@@ -113,7 +113,7 @@ export default function Projects() {
     {
       id: 9,
       name: "Local St Rehab 2020",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
 
       image: "/images/Projects/394/1.JPG",
       bedrooms: "Four",
@@ -126,7 +126,7 @@ export default function Projects() {
     {
       id: 10,
       name: "SR-163 x Ash",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
 
       image: "/images/Projects/399/1.jpg",
       bedrooms: "Four",
@@ -139,7 +139,7 @@ export default function Projects() {
     {
       id: 11,
       name: "FY 21-22 Pav. Mainte Repairs",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
 
       image: "/images/Projects/479/1.jpeg",
       bedrooms: "Four",
@@ -152,7 +152,7 @@ export default function Projects() {
     {
       id: 12,
       name: "Traffic Calming on Amargosa Dr.",
-      location: "Apartment in Dubai 2BR Apartment in Al Barsha",
+      location: "",
 
       image: "/images/Projects/412/1.jpeg",
       bedrooms: "Four",
@@ -187,7 +187,7 @@ export default function Projects() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
         <div className="mb-12 mt-32">
-          <p className="text-gray-600 mb-4">Our recent projects</p>
+          <p className="text-blue-600 mb-4">Our recent projects</p>
           <h1 className="text-5xl font-bold">Best Properties of the years</h1>
         </div>
 
@@ -212,7 +212,7 @@ export default function Projects() {
           {currentProjects.map((property) => (
             <div 
               key={property.id} 
-              className="bg-white rounded-2xl overflow-hidden shadow-lg border-1 border-gray-200 cursor-pointer"
+              className="bg-white rounded-2xl overflow-hidden shadow-lg border-1 border-gray-200 hover:cursor-pointer transition-all duration-300 hover:shadow-xl"
               onClick={() => handlePropertyClick(property.id)}
             >
               <div className="relative h-64 p-2 overflow-hidden">
@@ -225,7 +225,7 @@ export default function Projects() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{property.name}</h3>
                 <p className="text-gray-600 text-sm mb-4">{property.location}</p>
-                <button className="px-4 py-2 bg-black text-white rounded-md">View</button>
+                <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md">View</button>
               </div>
             </div>
           ))}

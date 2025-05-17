@@ -275,7 +275,7 @@ export default function PropertyListing() {
 
 
       {/* Updated Image Slider */}
-      <div className="relative h-[700px] w-full overflow-hidden rounded-xl">
+      <div className="relative h-[800px] w-full overflow-hidden rounded-xl">
         <div
           className="absolute inset-0 flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentImage * 100}%)` }}
@@ -285,7 +285,7 @@ export default function PropertyListing() {
               <img
                 src={src}
                 alt={`Property view ${index + 1}`}
-                className="w-full h-[900px] object-cover"
+                className="w-full h-[1000px] object-cover"
               />
               {/* Gradient overlay and title only on first image */}
               {index === 0 && (

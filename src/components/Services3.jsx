@@ -8,12 +8,12 @@ export default function Services3() {
       title: "Excavation & Underground Services",
       description:
         "Professional excavation services and underground utility installations for residential, commercial, and industrial projects. We ensure precise execution and safety compliance.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rstyhsrdt.PNG-EQDpEiBZzY4pYX3l6kSbHgMRCxheFd.png",
+      image: "/images/Services/Service1.JPG",
     },
     {
       title: "Asphalt & Parking Solutions",
       description: "Complete asphalt services including installation, maintenance, repairs, seal coating, striping, and petromat overlay. We specialize in parking lot improvements and resurfacing.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rstyhsrdt.PNG-EQDpEiBZzY4pYX3l6kSbHgMRCxheFd.png",
+      image: "/images/Services/Service2.jpeg",
     },
     {
       title: "ADA Compliance & Fine Grading",
@@ -103,8 +103,8 @@ export default function Services3() {
             >
               <Card className="group hover:bg-accent/5 transition-all transform hover:scale-[1.02] cursor-pointer">
                 <CardContent className="p-0">
-                  <div className="grid grid-cols-1 md:grid-cols-[300px_1fr_auto] items-center gap-6 p-6">
-                    <div className="relative h-48 md:h-40 overflow-hidden rounded-lg">
+                  <div className="grid grid-cols-1 md:grid-cols-[350px_1fr_auto] items-center gap-6 p-2">
+                    <div className="relative h-56 md:h-50 overflow-hidden rounded-lg">
                       <img
                         src={service.image || "/placeholder.svg"}
                         alt={service.title}
@@ -116,7 +116,6 @@ export default function Services3() {
                       <p className="text-muted-foreground">{service.description}</p>
                     </div>
                     <div className="flex items-center justify-end">
-                      <ArrowRight className="h-6 w-6 text-muted-foreground group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </CardContent>

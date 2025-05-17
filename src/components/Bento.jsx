@@ -13,14 +13,12 @@ export default function Bento() {
 
   const items = [    
     { 
-      title: 'Technology', 
-      subtitle: 'Future innovations', 
+      title: 'Pala Vista', 
       image: '/images/pala_img2.jpg',
       projectId: '1' // ID corresponding to Pala Vista in PropertyListing
     },
     { 
-      title: 'Food', 
-      subtitle: 'Culinary delights', 
+      title: 'Pave. Maint and Repair', 
       image: '/images/Projects/506/1.JPG',
       projectId: '3'
     },

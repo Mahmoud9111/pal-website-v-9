@@ -82,7 +82,7 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between backdrop-blur-xl bg-white/50 rounded-2xl px-3">
           {/* Logo */}
           <Link to="/" className="flex items-center font-semibold text-black ">
-            <span className="ml-2">PAL Engineering </span>
+            <img src="/images/PAL_Logo.png" alt="PAL Engineering" className="h-12" />
           </Link>
 
           {/* Navigation Links */}
@@ -106,7 +106,7 @@ export default function Header() {
             <div className="hidden md:flex items-center space-x-4">
               <Link
                 to="/contact"
-                className="inline-flex h-9 items-center justify-center rounded-md bg-orange-500 backdrop-blur-sm px-4 text-sm font-medium text-white shadow transition-colors hover:bg-orange-500"
+                className="inline-flex h-9 items-center justify-center rounded-md bg-blue-500 backdrop-blur-sm px-4 text-sm font-medium text-white shadow transition-colors hover:bg-blue-600"
               >
                 Contact us
               </Link>

@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 const cards = [
   {
     id: 2,
-    title: 'Fight deforestation',
+    title: 'Drainage Improvements',
     image: '/images/Projects/488/1.jpg',
   },
   {
     id: 10,
-    title: 'Invest in ocean health',
+    title: 'SR-163 x Ash',
     image: '/images/Projects/399/1.jpg',
   },
   {
