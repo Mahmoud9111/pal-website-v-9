@@ -5,28 +5,28 @@ import { motion } from "framer-motion"
 export default function Services3() {
   const services = [
     {
-      title: "Renewable Energy Solutions",
+      title: "Excavation & Underground Services",
       description:
-        "Embrace the power of clean energy with our advanced renewable solutions. From solar panels to sustainable grid technologies.",
+        "Professional excavation services and underground utility installations for residential, commercial, and industrial projects. We ensure precise execution and safety compliance.",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rstyhsrdt.PNG-EQDpEiBZzY4pYX3l6kSbHgMRCxheFd.png",
     },
     {
-      title: "Eco-Friendly Manufacturing",
-      description: "Transform your production processes with our sustainable manufacturing solutions.",
+      title: "Asphalt & Parking Solutions",
+      description: "Complete asphalt services including installation, maintenance, repairs, seal coating, striping, and petromat overlay. We specialize in parking lot improvements and resurfacing.",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rstyhsrdt.PNG-EQDpEiBZzY4pYX3l6kSbHgMRCxheFd.png",
     },
     {
-      title: "Environmental Consulting Services",
+      title: "ADA Compliance & Fine Grading",
       description:
-        "Navigate the complexities of environmental regulation with our expert consulting services. We provide comprehensive assessments and strategic planning.",
+        "Expert ADA compliance solutions and precision fine grading services. We ensure your property meets all accessibility requirements while maintaining perfect surface levels.",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rstyhsrdt.PNG-EQDpEiBZzY4pYX3l6kSbHgMRCxheFd.png",
     },
     {
-        title: "Environmental Consulting Services",
-        description:
-          "Navigate the complexities of environmental regulation with our expert consulting services. We provide comprehensive assessments and strategic planning.",
-        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rstyhsrdt.PNG-EQDpEiBZzY4pYX3l6kSbHgMRCxheFd.png",
-      },
+      title: "Electrical & Landscaping",
+      description:
+        "Comprehensive electrical services and professional landscaping solutions for all property types. From infrastructure upgrades to beautiful outdoor spaces, we deliver excellence.",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rstyhsrdt.PNG-EQDpEiBZzY4pYX3l6kSbHgMRCxheFd.png",
+    },
   ]
 
   const titleVariants = {
@@ -87,9 +87,7 @@ export default function Services3() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            We are dedicated to providing the best services in the sustainability manufacturing industry. Our commitment
-            to excellence is reflected in our innovative practices, cutting-edge technology, and a passionate team of
-            experts.
+            We are dedicated to providing exceptional construction and maintenance services across residential, commercial, and industrial sectors. Our commitment to excellence is reflected in our precise workmanship, state-of-the-art equipment, and our experienced team of professionals.
           </motion.p>
         </div>
 

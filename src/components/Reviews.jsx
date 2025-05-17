@@ -1,33 +1,33 @@
 import { useState, useEffect } from "react"
 import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { motion } from 'framer-motion' // Add this import
+import { motion } from 'framer-motion'
 
 const reviewsData = [
   {
-    quote: "Proactive customer management in Planhat has transformed our teams' operating performance.",
-    author: "Alexey Smolyanyy",
-    role: "Director of Customer Success Strategy and Operations, Redis",
+    quote: "PAL's commitment to ADA compliance and quality in their parking lot improvements exceeded our expectations.",
+    author: "John Martinez",
+    role: "Facility Manager, Commercial Plaza",
   },
   {
-    quote: "The platform's intuitive design has streamlined our entire customer success workflow.",
-    author: "Emily Chen",
-    role: "Head of Customer Experience, TechFlow Global",
+    quote: "Their expertise in excavation and underground work helped us complete our industrial project ahead of schedule.",
+    author: "Sarah Williams",
+    role: "Project Director, Industrial Development Corp",
   },
   {
-    quote: "Since implementing Planhat, we've seen a 40% increase in customer satisfaction scores.",
-    author: "Marcus Thompson",
-    role: "VP of Customer Success, CloudScale Solutions",
+    quote: "The asphalt maintenance and seal coating services provided by PAL have significantly extended our parking lot's lifespan.",
+    author: "Michael Chang",
+    role: "Property Manager, Retail Complex",
   },
   {
-    quote: "The insights we've gained through Planhat have revolutionized our approach to customer relationships.",
-    author: "Sofia Rodriguez",
-    role: "Customer Success Director, InnovateHub",
+    quote: "PAL's landscaping and fine grading work transformed our commercial property beautifully.",
+    author: "Lisa Anderson",
+    role: "Real Estate Developer",
   },
   {
-    quote: "Planhat has become an indispensable tool for our customer success strategy.",
-    author: "James Wilson",
-    role: "Chief Customer Officer, Enterprise Solutions Inc",
+    quote: "Their electrical services and underground work expertise made them the perfect partner for our public works project.",
+    author: "Robert Johnson",
+    role: "Public Works Director, City Municipality",
   },
 ]
 
@@ -71,14 +71,14 @@ export default function Reviews() {
             <div className="relative aspect-square w-full">
               <img
                 src="/images/6.jpg"
-                alt="Platform interface"
+                alt="Engineering project"
                 className="h-full w-full object-cover opacity-80"
               />
               <div className="absolute inset-0 bg-black/20" />
               <div className="absolute inset-0 p-12 flex flex-col justify-between">
                 <div>
-                  <h2 className="text-3xl font-medium text-white md:text-4xl lg:text-5xl">Intuitive yet deep</h2>
-                  <p className="mt-4 text-xl text-white/80">A scalable platform your team can adopt in days.</p>
+                  <h2 className="text-3xl font-medium text-white md:text-4xl lg:text-5xl">Engineering Excellence</h2>
+                  <p className="mt-4 text-xl text-white/80">Providing comprehensive engineering solutions for all your project needs.</p>
                 </div>
             {/* Updated Button Container */}
             <div className="mt-12 flex justify-center w-full">

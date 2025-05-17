@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h2 className="text-4xl sm:text-6xl font-bold mb-2 sm:mb-3">PAL</h2>
             <p className="text-gray-600 max-w-md text-sm sm:text-base">
-              Collaborative, strategic, and results-driven process to elevate your brand and drive growth.
+              PAL General Engineering Inc. - Serving San Diego County
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -44,23 +44,23 @@ export default function Footer() {
 
         {/* Navigation Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-          {/* Product Column */}
+          {/* Quick Links Column */}
           <div>
-            <h3 className="text-xs sm:text-sm font-semibold text-gray-500 mb-3 sm:mb-4">PRODUCT</h3>
+            <h3 className="text-xs sm:text-sm font-semibold text-orange-500 mb-3 sm:mb-4">QUICK LINKS</h3>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link to="#" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  Branding
+                <Link to="/about" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  Marketing
+                <Link to="/services" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
+                  Services
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  Packaging
+                <Link to="/projects" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
+                  Projects
                 </Link>
               </li>
             </ul>
@@ -68,64 +68,55 @@ export default function Footer() {
 
           {/* Company Column */}
           <div>
-            <h3 className="text-xs sm:text-sm font-semibold text-gray-500 mb-3 sm:mb-4">COMPANY</h3>
+            <h3 className="text-xs sm:text-sm font-semibold text-orange-500 mb-3 sm:mb-4">COMPANY</h3>
+            <ul className="space-y-2 sm:space-y-3">
+              <li className="text-sm sm:text-base text-gray-600">
+                PAL General Engineering Inc.
+              </li>
+              <li>
+                <a 
+                  href="https://maps.google.com/?q=9939+Hibert+St.+Ste+201+San+Diego,+CA,+92131"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm sm:text-base text-gray-600 hover:text-gray-500"
+                >
+                  9939 Hibert St. Ste 201 San Diego, CA, 92131
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Column */}
+          <div>
+            <h3 className="text-xs sm:text-sm font-semibold text-orange-500 mb-3 sm:mb-4">CONTACT</h3>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link to="#" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  About
-                </Link>
+                <a href="tel:+18588605300" className="text-sm sm:text-base text-gray-600 hover:text-gray-500 flex items-center gap-2">
+                  (858) 860-5300
+                </a>
               </li>
               <li>
-                <Link to="#" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  Careers
-                </Link>
+                <a href="tel:+18588605556" className="text-sm sm:text-base text-gray-600 hover:text-gray-500 flex items-center gap-2">
+
+                  (858) 860-5556
+                </a>
               </li>
               <li>
-                <Link to="#" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  Blog
+                <Link to="mailto:info@palsd.com" className="text-sm sm:text-base text-gray-600 hover:text-gray-500">
+                   info@palsd.com
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Social Column */}
-          <div>
-            <h3 className="text-xs sm:text-sm font-semibold text-gray-500 mb-3 sm:mb-4">SOCIAL</h3>
-            <ul className="space-y-2 sm:space-y-3">
-              <li>
-                <Link to="#" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  Facebook
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  LinkedIn
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  Instagram
-                </Link>
-              </li>
-            </ul>
-          </div>
 
-          {/* Support Column */}
-          <div>
-            <h3 className="text-xs sm:text-sm font-semibold text-gray-500 mb-3 sm:mb-4">SUPPORT</h3>
-            <ul className="space-y-2 sm:space-y-3">
-              <li>
-                <Link to="tel:(410)630-2397" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  (410) 630-2397
-                </Link>
-              </li>
-              <li>
-                <Link to="mailto:support@lingly.com" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                  support@lingly.com
-                </Link>
-              </li>
-            </ul>
-          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-8 pt-8 border-t border-gray-200">
+          <p className="text-center text-sm text-gray-600">
+            © Copyright 2025 PAL General Engineering Inc. Lic#916931
+          </p>
         </div>
       </div>
     </footer>

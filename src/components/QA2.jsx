@@ -123,40 +123,39 @@ FaqItem.displayName = "FaqItem"
 
 // Main FAQ Component with example data
 function FAQ() {
-  // Example FAQ items
   const faqItems = [
     {
-      question: "How does your AI invoice processing work?",
+      question: "What makes PAL General Engineering the market leader?",
       answer:
-        "Our AI-powered platform automatically reads, extracts, and organizes key data from invoices, eliminating the need for manual entry. Simply upload your invoice, and our AI processes it in real-time, providing you with structured data ready for analysis or export.",
+        "As the market leader in engineering services, we deliver unmatched expertise in ADA Compliance, Excavation, Fine Grading, Parking Lot Improvements, Electrical Services, Landscaping, Underground work, Asphalt services, and more. Our comprehensive service range and commitment to excellence set us apart in residential, commercial, industrial, and public works projects.",
     },
     {
-      question: "Can I export invoice data to multiple file formats?",
+      question: "How does our leadership benefit our clients?",
       answer:
-        "Yes! Our tool supports various export options, including Excel, PDF, and CSV formats, allowing you to seamlessly integrate the extracted data into your accounting systems or share it with your team.",
+        "Our position as market leaders means we bring superior engineering knowledge, proven methodologies, and extensive experience to every project. We consistently exceed customer expectations in value, quality, and service delivery.",
     },
     {
-      question: "What types of invoices can your AI handle?",
+      question: "What specialized capabilities set us apart?",
       answer:
-        "Our AI is designed to handle a wide range of invoice types, whether structured or unstructured. Whether it’s a standard purchase invoice, utility bill, or custom format, our AI adapts to various invoice layouts and ensures accurate data extraction.",
+        "As industry leaders, we excel in complex fixed works requiring specialized engineering knowledge. Our expertise covers irrigation, drainage, water supply, flood control, highways, streets, parks, and recreational works. We're renowned for our excellence in land leveling, earthmoving, excavating, paving, and concrete works.",
     },
     {
-      question: "How does the AI chatbot help with financial calculations?",
+      question: "What types of projects do we handle?",
       answer:
-        "Our intelligent AI chatbot is built to assist with a variety of financial tasks. From performing complex calculations to generating custom financial reports, it helps you make data-driven decisions quickly. Simply ask the chatbot for specific calculations, and it delivers results instantly.",
+        "As market leaders, we successfully manage projects across residential, commercial, industrial, and public works sectors. Our proven track record includes projects of all scales, consistently delivering superior results while maintaining the highest industry standards.",
     },
     {
-      question: "Is your platform easy to integrate with my existing systems?",
+      question: "How do we maintain our market leadership?",
       answer:
-        "Absolutely! Our platform is designed for seamless integration with popular accounting software and ERP systems. With our flexible export options and API capabilities, you can quickly sync the extracted data with your current tools, ensuring a smooth workflow with minimal disruption.",
+        "We maintain our market leadership through unwavering commitment to excellence, continuous innovation, and strong partnerships with our customers in government and industry. Our solutions consistently enhance project delivery and quality, setting new standards in the communities we serve.",
     },
   ]
 
   return (
     <main className="py-12 bg-white">
       <FaqSection
-        title="Frequently Asked Questions"
-        description="Find answers to commonly asked questions about our platform and services."
+        title="Why Choose the Market Leader"
+        description="Discover why PAL General Engineering leads the industry in comprehensive construction and engineering services."
         items={faqItems}
       />
     </main>
