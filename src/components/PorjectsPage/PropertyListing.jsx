@@ -35,9 +35,11 @@ export default function PropertyListing() {
     1: {
       title: "Pala Vista",
       images: [
-        "/images/pala_img1.jpg",
-        "/images/pala_img2.jpg",
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture33.PNG-JyfMV9FlIyUOIY39VdQ7dCs4mTPSFo.png"
+        "/images/Projects/414/1.jpg",
+        "/images/Projects/414/3.jpg",
+        "/images/Projects/414/2.jpg",
+        "/images/Projects/414/4.jpg",
+
       ],
       bedrooms: "Four",
       bathrooms: "Three",
