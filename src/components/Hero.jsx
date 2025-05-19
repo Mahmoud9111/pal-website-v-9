@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-import { ArrowUpRight } from 'lucide-react'  // Add this import at the top
+import { ArrowUpRight } from 'lucide-react'
+import { Link } from "react-router-dom"  // Add this import
 
 export default function AboutSection() {
   const [shrinkFactor, setShrinkFactor] = useState(1)
@@ -44,10 +45,10 @@ export default function AboutSection() {
           >
             <div className="h-full flex items-center">
               <div className="max-w-[1536px] mx-auto w-full px-4 sm:px-6 lg:px-16">
-                <div className="max-w-[800px]">
+                <div className="max-w-[900px]">   {/* Updated max-width value only */}
 
-                  <h1 className="text-4xl sm:text-6xl lg:text-[96px] leading-[1.1] font-bold mb-4 sm:mb-6 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-Socal Asphalt Paving Leaders
+                  <h1 className="text-4xl sm:text-6xl lg:text-[96px] leading-[1.1] font-bold mb-4 sm:mb-6 text-white">
+                  Socal Asphalt Paving <span className="">Leaders</span>
 
 
                   </h1>
@@ -55,12 +56,15 @@ Socal Asphalt Paving Leaders
                     Expert paving and construction services delivering superior results. 
                     From driveways to commercial projects, we build with precision and pride.
                   </p>
-                  <button className="group relative bg-transparent text-white hover:bg-white/5 rounded-full px-2.5 sm:px-3 py-2.5 sm:py-3 text-base sm:text-lg font-medium transition-all duration-300 hover:shadow-lg backdrop-blur-md border border-white/10 flex items-center justify-center">
-                    Request a Quote
-                    <span className="ml-2 bg-blue-700 rounded-full p-1.5 sm:p-2 inline-flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                  <Link 
+                    to="/contactus" 
+                    className="group relative bg-transparent text-white max-w-[200px] hover:bg-white/5 rounded-full px-2.5 sm:px-3 py-2.5 sm:py-3 text-base sm:text-lg font-medium transition-all duration-300 hover:shadow-lg backdrop-blur-md border border-white/10 flex items-center justify-center"
+                  >
+                    Contact us
+                    <span className="ml-2 bg-blue-700 rounded-full p-1.5 sm:p-2.5 inline-flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                       <ArrowUpRight className="h-5 w-5 sm:h-6 sm:w-6" />
                     </span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -87,16 +87,16 @@ export default function Header() {
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center space-x-12 rounded-2xl p-4 ">
-            <Link to="/home" className="text-sm hover:text-gray-800 transition-colors">
+            <Link to="/home" className="text-sm hover:text-blue-500 transition-colors">
               Home
             </Link>
-            <Link to="/projects" className="text-sm hover:text-gray-800 transition-colors">
+            <Link to="/projects" className="text-sm hover:text-blue-500 transition-colors">
               Projects
             </Link>
-            <Link to="/aboutus" className="text-sm hover:text-gray-800 transition-colors">
+            <Link to="/aboutus" className="text-sm hover:text-blue-500 transition-colors">
               About us
             </Link>
-            <Link to="/contactus" className="text-sm hover:text-gray-800 transition-colors">
+            <Link to="/contactus" className="text-sm hover:text-blue-500 transition-colors">
               Contact us
             </Link>
           </nav>
@@ -104,12 +104,12 @@ export default function Header() {
           {/* Right Section */}
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex items-center space-x-4">
-              <Link
-                to="/contact"
+              <a
+                href="tel:+18588605300"
                 className="inline-flex h-9 items-center justify-center rounded-md bg-blue-500 backdrop-blur-sm px-4 text-sm font-medium text-white shadow transition-colors hover:bg-blue-600"
               >
-                Contact us
-              </Link>
+                Call us
+              </a>
             </div>
             <button 
               className="md:hidden p-2 hover:bg-white/20 rounded-full transition-colors" 
@@ -153,12 +153,12 @@ export default function Header() {
                 >
                   Contact us
                 </Link>
-                <Link
-                  to="/contact"
-                  className="block px-4 py-3 text-sm text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-colors text-center"
+                <a
+                  href="tel:+18588605300"
+                  className="block px-4 py-3 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-xl transition-colors text-center"
                 >
-                  Contact us
-                </Link>
+                  Call us
+                </a>
               </div>
             </motion.div>
           )}

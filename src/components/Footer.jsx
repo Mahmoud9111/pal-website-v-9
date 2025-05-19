@@ -11,7 +11,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Link
-              to="#contact"
+              to="/contactus"
               className="inline-flex h-16 sm:h-32 w-full sm:w-64 relative rounded-xl bg-[#1c60ff] px-4 hover:bg-[#0044e4]/90 transition-colors"
             >
               <div className="absolute top-4 right-4">
@@ -77,7 +77,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm sm:text-base text-gray-600 hover:text-gray-500"
                 >
-                  9939 Hibert St. Ste 201 San Diego, CA, 92131
+                 Address: 9939 Hibert St. Ste 201 San Diego, CA, 92131
                 </a>
               </li>
             </ul>
@@ -89,13 +89,14 @@ export default function Footer() {
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <a href="tel:+18588605300" className="text-sm sm:text-base text-gray-600 hover:text-gray-500 flex items-center gap-2">
-                  (858) 860-5300
+                  Phone: (858) 860-5300
                 </a>
               </li>
               <li>
                 <a href="tel:+18588605556" className="text-sm sm:text-base text-gray-600 hover:text-gray-500 flex items-center gap-2">
 
-                  (858) 860-5556
+                  
+                  Fax: (858) 860-5556
                 </a>
               </li>
               <li>

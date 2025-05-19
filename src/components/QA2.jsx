@@ -125,29 +125,24 @@ FaqItem.displayName = "FaqItem"
 function FAQ() {
   const faqItems = [
     {
-      question: "What makes PAL General Engineering the market leader?",
-      answer:
-        "As the market leader in engineering services, we deliver unmatched expertise in ADA Compliance, Excavation, Fine Grading, Parking Lot Improvements, Electrical Services, Landscaping, Underground work, Asphalt services, and more. Our comprehensive service range and commitment to excellence set us apart in residential, commercial, industrial, and public works projects.",
+      question: "What general engineering services do you provide?",
+      answer: "Our comprehensive engineering solutions encompass structural design, project management, and infrastructure development. We excel in civil, mechanical, and environmental engineering projects, delivering expert solutions for complex engineering challenges across various sectors.",
     },
     {
-      question: "How does our leadership benefit our clients?",
-      answer:
-        "Our position as market leaders means we bring superior engineering knowledge, proven methodologies, and extensive experience to every project. We consistently exceed customer expectations in value, quality, and service delivery.",
+      question: "What are your asphalt specialization services?",
+      answer: "We provide complete asphalt services including professional installation, routine maintenance, repairs, seal coating, striping, and petromat overlay. Our team specializes in parking lot improvements and resurfacing, ensuring durable and high-quality results for all surfaces.",
     },
     {
-      question: "What specialized capabilities set us apart?",
-      answer:
-        "As industry leaders, we excel in complex fixed works requiring specialized engineering knowledge. Our expertise covers irrigation, drainage, water supply, flood control, highways, streets, parks, and recreational works. We're renowned for our excellence in land leveling, earthmoving, excavating, paving, and concrete works.",
+      question: "How do you handle ADA compliance and fine grading?",
+      answer: "We deliver expert ADA compliance solutions combined with precision fine grading services. Our team ensures your property meets all accessibility requirements while maintaining perfect surface levels. We focus on creating safe, compliant, and properly graded spaces for all users.",
     },
     {
-      question: "What types of projects do we handle?",
-      answer:
-        "As market leaders, we successfully manage projects across residential, commercial, industrial, and public works sectors. Our proven track record includes projects of all scales, consistently delivering superior results while maintaining the highest industry standards.",
+      question: "What electrical and landscaping services do you offer?",
+      answer: "Our services include comprehensive electrical solutions and professional landscaping for all property types. From electrical infrastructure upgrades to creating beautiful outdoor spaces, we handle everything from installation to maintenance, ensuring safety and aesthetics.",
     },
     {
-      question: "How do we maintain our market leadership?",
-      answer:
-        "We maintain our market leadership through unwavering commitment to excellence, continuous innovation, and strong partnerships with our customers in government and industry. Our solutions consistently enhance project delivery and quality, setting new standards in the communities we serve.",
+      question: "What makes PAL General Engineering unique in the industry?",
+      answer: "Our unique strength lies in offering integrated solutions across general engineering, asphalt services, ADA compliance, electrical work, and landscaping. This comprehensive approach, combined with our expertise and commitment to quality, allows us to handle complex projects efficiently while maintaining the highest standards.",
     },
   ]
 
