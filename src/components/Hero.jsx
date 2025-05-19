@@ -45,11 +45,9 @@ export default function AboutSection() {
             <div className="h-full flex items-center">
               <div className="max-w-[1536px] mx-auto w-full px-4 sm:px-6 lg:px-16">
                 <div className="max-w-[800px]">
-                  <p className="text-white text-xs sm:text-sm mb-2 sm:mb-3 uppercase tracking-wider font-semibold bg-white/10 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full inline-block">
-                    Quality Construction
-                  </p>
+
                   <h1 className="text-4xl sm:text-6xl lg:text-[96px] leading-[1.1] font-bold mb-4 sm:mb-6 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-Paving the Way Where Progress Begins
+Socal Asphalt Paving Leaders
 
 
                   </h1>

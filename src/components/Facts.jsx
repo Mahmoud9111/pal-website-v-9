@@ -86,7 +86,7 @@ export default function Facts() {
                 custom={index}
                 className={`p-6 rounded-3xl shadow-xl flex flex-col justify-center items-start ${stat.bg} relative overflow-hidden group`}
               >
-                <div className="absolute inset-0 bg-orange-500 transition-transform duration-200 z-[1] rounded-4xl transform origin-bottom-left scale-0 group-hover:scale-100"></div>
+                <div className="absolute inset-0 bg-blue-500 transition-transform duration-200 z-[1] rounded-4xl transform origin-bottom-left scale-0 group-hover:scale-100"></div>
                 <span className="text-gray-950 text-4xl md:text-5xl font-bold relative z-[2] duration-200 group-hover:text-white">{stat.number}</span>
                 <p className="text-gray-600 mt-2 text-base md:text-lg relative z-[2] group-hover:text-white">{stat.label}</p>
               </motion.div>

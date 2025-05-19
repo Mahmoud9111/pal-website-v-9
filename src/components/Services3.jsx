@@ -5,27 +5,27 @@ import { motion } from "framer-motion"
 export default function Services3() {
   const services = [
     {
-      title: "Excavation & Underground Services",
+      title: "General Engineering projects",
       description:
-        "Professional excavation services and underground utility installations for residential, commercial, and industrial projects. We ensure precise execution and safety compliance.",
-      image: "/images/Services/Service1.JPG",
+        "Comprehensive engineering solutions encompassing structural design, project management, and infrastructure development. We handle diverse projects with expertise in civil, mechanical, and environmental engineering.",
+      image: "/images/Services/Service1.jpg",
     },
     {
-      title: "Asphalt & Parking Solutions",
+      title: "Asphalt Specialist",
       description: "Complete asphalt services including installation, maintenance, repairs, seal coating, striping, and petromat overlay. We specialize in parking lot improvements and resurfacing.",
-      image: "/images/Services/Service2.jpeg",
+      image: "/images/Services/Service2.jpg",
     },
     {
       title: "ADA Compliance & Fine Grading",
       description:
         "Expert ADA compliance solutions and precision fine grading services. We ensure your property meets all accessibility requirements while maintaining perfect surface levels.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rstyhsrdt.PNG-EQDpEiBZzY4pYX3l6kSbHgMRCxheFd.png",
+      image: "/images/Services/Service3.png",
     },
     {
       title: "Electrical & Landscaping",
       description:
         "Comprehensive electrical services and professional landscaping solutions for all property types. From infrastructure upgrades to beautiful outdoor spaces, we deliver excellence.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rstyhsrdt.PNG-EQDpEiBZzY4pYX3l6kSbHgMRCxheFd.png",
+      image: "/images/Services/Service4.jpeg",
     },
   ]
 

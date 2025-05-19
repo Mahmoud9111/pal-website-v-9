@@ -187,8 +187,7 @@ export default function Projects() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
         <div className="mb-12 mt-32">
-          <p className="text-blue-600 mb-4">Our recent projects</p>
-          <h1 className="text-5xl font-bold">Best Properties of the years</h1>
+          <h1 className="text-5xl font-bold">Our recent projects</h1>
         </div>
 
         {/* Search Section */}
