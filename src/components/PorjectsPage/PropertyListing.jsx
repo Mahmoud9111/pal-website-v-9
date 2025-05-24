@@ -346,72 +346,74 @@ export default function PropertyListing() {
         </div>
       </div>
 
+      {/* Property Details and Map Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Left Column - Property Details */}
+        <div className="space-y-6">
+          <div className="flex flex-col gap-2">
+            <h2 className="text-3xl font-bold">Property Details</h2>
+            <p className="text-gray-600">Everything you need to know about this property</p>
+          </div>
 
-      {/* Property Details Section */}
-      <div className="space-y-6">
-        <div className="flex flex-col gap-2">
-          <h2 className="text-3xl font-bold">Property Details</h2>
-          <p className="text-gray-600">Everything you need to know about this property</p>
+          <div className="grid grid-cols-2 gap-4">
+            <CardProj className="p-4 flex items-center gap-2">
+              <Construction className="h-5 w-5 text-gray-500" />
+              <div>
+                <p className="text-sm text-gray-500">Project Type</p>
+                <p className="font-semibold">{property.projectType}</p>
+              </div>
+            </CardProj>
+            <CardProj className="p-4 flex items-center gap-2">
+              <Clock className="h-5 w-5 text-gray-500" />
+              <div>
+                <p className="text-sm text-gray-500">Duration</p>
+                <p className="font-semibold">{property.duration}</p>
+              </div>
+            </CardProj>
+            <CardProj className="p-4 flex items-center gap-2">
+              <SquareStack className="h-5 w-5 text-gray-500" />
+              <div>
+                <p className="text-sm text-gray-500">Project Area</p>
+                <p className="font-semibold">{property.area}</p>
+              </div>
+            </CardProj>
+            <CardProj className="p-4 flex items-center gap-2">
+              <Hammer className="h-5 w-5 text-gray-500" />
+              <div>
+                <p className="text-sm text-gray-500">Status</p>
+                <p className="font-semibold">{property.status}</p>
+              </div>
+            </CardProj>
+          </div>
+
+          {/* Description */}
+          <CardProj className="p-6">
+            <h2 className="text-xl font-semibold mb-4">Description</h2>
+            <p className="text-gray-600 mb-4">
+              {property.description}
+            </p>
+            <Button variant="ghost" className="flex items-center gap-1">
+              Show More<ChevronDown className="h-4 w-4" />
+            </Button>
+          </CardProj>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <CardProj className="p-4 flex items-center gap-2">
-            <Construction className="h-5 w-5 text-gray-500" />
-            <div>
-              <p className="text-sm text-gray-500">Project Type</p>
-              <p className="font-semibold">{property.projectType}</p>
-            </div>
-          </CardProj>
-          <CardProj className="p-4 flex items-center gap-2">
-            <Clock className="h-5 w-5 text-gray-500" />
-            <div>
-              <p className="text-sm text-gray-500">Duration</p>
-              <p className="font-semibold">{property.duration}</p>
-            </div>
-          </CardProj>
-          <CardProj className="p-4 flex items-center gap-2">
-            <SquareStack className="h-5 w-5 text-gray-500" />
-            <div>
-              <p className="text-sm text-gray-500">Project Area</p>
-              <p className="font-semibold">{property.area}</p>
-            </div>
-          </CardProj>
-          <CardProj className="p-4 flex items-center gap-2">
-            <Hammer className="h-5 w-5 text-gray-500" />
-            <div>
-              <p className="text-sm text-gray-500">Status</p>
-              <p className="font-semibold">{property.status}</p>
-            </div>
-          </CardProj>
-        </div>
+        {/* Right Column - Map */}
+        <CardProj className="p-6 h-fit">
+          <h2 className="text-xl font-semibold mb-4">Space Location</h2>
+          <div className="h-[400px] bg-gray-100 rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1681.466643682779!2d-116.94693704721892!3d32.55462566888299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d947aca2de843b%3A0x637c240f29834c62!2s2295%20Harvest%20Rd%2C%20San%20Diego%2C%20CA%2092154%2C%20USA!5e0!3m2!1sen!2s!4v1739843909198!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </CardProj>
       </div>
-
-      {/* Description */}
-      <CardProj className="p-6">
-        <h2 className="text-xl font-semibold mb-4">Description</h2>
-        <p className="text-gray-600 mb-4">
-          {property.description}
-        </p>
-        <Button variant="ghost" className="flex items-center gap-1">
-          Show More <ChevronDown className="h-4 w-4" />
-        </Button>
-      </CardProj>
-
-      {/* Map */}
-      <CardProj className="p-6">
-        <h2 className="text-xl font-semibold mb-4">Space Location</h2>
-        <div className="h-[500px] bg-gray-100 rounded-lg overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1681.466643682779!2d-116.94693704721892!3d32.55462566888299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d947aca2de843b%3A0x637c240f29834c62!2s2295%20Harvest%20Rd%2C%20San%20Diego%2C%20CA%2092154%2C%20USA!5e0!3m2!1sen!2s!4v1739843909198!5m2!1sen!2s"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </CardProj>
 
     </div>     
   )
