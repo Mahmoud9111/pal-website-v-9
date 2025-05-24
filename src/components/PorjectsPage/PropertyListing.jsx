@@ -72,11 +72,11 @@ export default function PropertyListing() {
         "/images/Projects/506/5.JPG",
         // ...more images...
       ],
-      projectType: "Maintenance",
-      duration: "8 months",
-      area: "1,20000 ft²",
-      status: "Completed",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
 
     4: {
@@ -88,11 +88,11 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      projectType: "Maintenance",
-      duration: "6 months",
-      area: "1,10000 ft²",
-      status: "Completed",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
 
     5: {
@@ -105,11 +105,11 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      projectType: "Maintenance",
-      duration: "5 months",
-      area: "1,05000 ft²",
-      status: "Completed",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
 
     6: {
@@ -124,11 +124,11 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      projectType: "Construction",
-      duration: "14 months",
-      area: "1,60000 ft²",
-      status: "In Progress",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
 
     7: {
@@ -144,11 +144,11 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      projectType: "Demolition",
-      duration: "3 months",
-      area: "90000 ft²",
-      status: "Completed",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
 
     8: {
@@ -163,11 +163,11 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      projectType: "Construction",
-      duration: "11 months",
-      area: "1,45000 ft²",
-      status: "In Progress",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
 
     9: {
@@ -182,11 +182,11 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      projectType: "Rehabilitation",
-      duration: "9 months",
-      area: "1,35000 ft²",
-      status: "Completed",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
 
     10: {
@@ -202,11 +202,11 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      projectType: "Construction",
-      duration: "13 months",
-      area: "1,70000 ft²",
-      status: "In Progress",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
 
     11: {
@@ -222,11 +222,11 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      projectType: "Maintenance",
-      duration: "7 months",
-      area: "1,20000 ft²",
-      status: "Completed",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
 
     12: {
@@ -241,11 +241,11 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      projectType: "Traffic Management",
-      duration: "4 months",
-      area: "80000 ft²",
-      status: "Completed",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
     
 
