@@ -38,13 +38,12 @@ export default function PropertyListing() {
         "/images/Projects/414/3.jpg",
         "/images/Projects/414/2.jpg",
         "/images/Projects/414/4.jpg",
-
       ],
-      projectType: "Construction",
-      duration: "12 months",
-      area: "1,33024 ft²",
-      status: "Completed",
-      description: "Major construction project involving road improvements and infrastructure development..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
     2: {
       title: "Drainage Improvements",
@@ -55,14 +54,12 @@ export default function PropertyListing() {
         "/images/Projects/488/4.jpg",
         "/images/Projects/488/5.jpg",
         "/images/Projects/488/6.jpg",
-
-        // ...more images...
       ],
-      projectType: "Construction",
-      duration: "10 months",
-      area: "1,50000 ft²",
-      status: "In Progress",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "",
+      duration: "",
+      area: "",
+      status: "",
+      description: ""
     },
 
     3: {
