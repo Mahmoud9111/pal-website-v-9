@@ -5,19 +5,18 @@ import { Card } from "@/components/ui/card"
 import { CardProj } from "@/components/ui/cardProj"
 import { Button } from "@/components/ui/button"
 import {
-  Bed,
-  Bath,
-  Square,
-  Car,
+  Wrench,
+  Clock,
+  SquareStack,
+  HardDriveDownload,
   Share2,
   Bookmark,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
-  ParkingMeterIcon as Parking,
-  Bike,
-  CableCarIcon as Elevator,
-  Dumbbell,
+  Building2,
+  Construction,
+  Hammer,
 } from "lucide-react"
 import { useParams } from "react-router-dom"
 
@@ -41,11 +40,11 @@ export default function PropertyListing() {
         "/images/Projects/414/4.jpg",
 
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
-      description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
+      projectType: "Construction",
+      duration: "12 months",
+      area: "1,33024 ft²",
+      status: "Completed",
+      description: "Major construction project involving road improvements and infrastructure development..."
     },
     2: {
       title: "Drainage Improvements",
@@ -59,10 +58,10 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Construction",
+      duration: "10 months",
+      area: "1,50000 ft²",
+      status: "In Progress",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
 
@@ -76,10 +75,10 @@ export default function PropertyListing() {
         "/images/Projects/506/5.JPG",
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Maintenance",
+      duration: "8 months",
+      area: "1,20000 ft²",
+      status: "Completed",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
 
@@ -92,10 +91,10 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Maintenance",
+      duration: "6 months",
+      area: "1,10000 ft²",
+      status: "Completed",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
 
@@ -109,10 +108,10 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Maintenance",
+      duration: "5 months",
+      area: "1,05000 ft²",
+      status: "Completed",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
 
@@ -128,10 +127,10 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Construction",
+      duration: "14 months",
+      area: "1,60000 ft²",
+      status: "In Progress",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
 
@@ -148,10 +147,10 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Demolition",
+      duration: "3 months",
+      area: "90000 ft²",
+      status: "Completed",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
 
@@ -167,10 +166,10 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Construction",
+      duration: "11 months",
+      area: "1,45000 ft²",
+      status: "In Progress",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
 
@@ -186,10 +185,10 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Rehabilitation",
+      duration: "9 months",
+      area: "1,35000 ft²",
+      status: "Completed",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
 
@@ -206,10 +205,10 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Construction",
+      duration: "13 months",
+      area: "1,70000 ft²",
+      status: "In Progress",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
 
@@ -226,10 +225,10 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Maintenance",
+      duration: "7 months",
+      area: "1,20000 ft²",
+      status: "Completed",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
 
@@ -245,10 +244,10 @@ export default function PropertyListing() {
 
         // ...more images...
       ],
-      bedrooms: "Four",
-      bathrooms: "Three",
-      area: "1,33024 ft",
-      parking: "Indoor",
+      projectType: "Traffic Management",
+      duration: "4 months",
+      area: "80000 ft²",
+      status: "Completed",
       description: "This apartment is perfect for solo travellers, couples on a holiday, and even business travellers..."
     },
     
@@ -360,31 +359,31 @@ export default function PropertyListing() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <CardProj className="p-4 flex items-center gap-2">
-            <Bed className="h-5 w-5 text-gray-500" />
+            <Construction className="h-5 w-5 text-gray-500" />
             <div>
-              <p className="text-sm text-gray-500">Bedroom</p>
-              <p className="font-semibold">{property.bedrooms}</p>
+              <p className="text-sm text-gray-500">Project Type</p>
+              <p className="font-semibold">{property.projectType}</p>
             </div>
           </CardProj>
           <CardProj className="p-4 flex items-center gap-2">
-            <Bath className="h-5 w-5 text-gray-500" />
+            <Clock className="h-5 w-5 text-gray-500" />
             <div>
-              <p className="text-sm text-gray-500">Bathroom</p>
-              <p className="font-semibold">{property.bathrooms}</p>
+              <p className="text-sm text-gray-500">Duration</p>
+              <p className="font-semibold">{property.duration}</p>
             </div>
           </CardProj>
           <CardProj className="p-4 flex items-center gap-2">
-            <Square className="h-5 w-5 text-gray-500" />
+            <SquareStack className="h-5 w-5 text-gray-500" />
             <div>
-              <p className="text-sm text-gray-500">Area</p>
+              <p className="text-sm text-gray-500">Project Area</p>
               <p className="font-semibold">{property.area}</p>
             </div>
           </CardProj>
           <CardProj className="p-4 flex items-center gap-2">
-            <Car className="h-5 w-5 text-gray-500" />
+            <Hammer className="h-5 w-5 text-gray-500" />
             <div>
-              <p className="text-sm text-gray-500">Parking</p>
-              <p className="font-semibold">{property.parking}</p>
+              <p className="text-sm text-gray-500">Status</p>
+              <p className="font-semibold">{property.status}</p>
             </div>
           </CardProj>
         </div>
