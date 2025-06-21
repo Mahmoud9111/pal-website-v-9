@@ -89,13 +89,12 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-12 rounded-2xl p-4 ">
             <Link to="/home" className="text-sm hover:text-blue-500 transition-colors">
               Home
-            </Link>
-            <Link to="/projects" className="text-sm hover:text-blue-500 transition-colors">
+            </Link>            <Link to="/projects" className="text-sm hover:text-blue-500 transition-colors">
               Projects
             </Link>
-            <Link to="/aboutus" className="text-sm hover:text-blue-500 transition-colors">
+            {/* <Link to="/aboutus" className="text-sm hover:text-blue-500 transition-colors">
               About us
-            </Link>
+            </Link> */}
             <Link to="/contactus" className="text-sm hover:text-blue-500 transition-colors">
               Contact us
             </Link>
@@ -134,21 +133,20 @@ export default function Header() {
                   className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
                 >
                   Home
-                </Link>
-                <Link 
+                </Link>                <Link 
                   to="/projects" 
                   className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
                 >
                   Projects
                 </Link>
-                <Link 
+                {/* <Link 
                   to="/aboutus" 
                   className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
                 >
                   About us
-                </Link>
+                </Link> */}
                 <Link 
-                  to="/contactus" 
+                  to="/contactus"
                   className="block px-4 py-3 text-sm hover:bg-orange-50 rounded-xl transition-colors hover:text-orange-500"
                 >
                   Contact us

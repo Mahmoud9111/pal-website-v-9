@@ -48,7 +48,6 @@ export default function PropertyListing() {
     2: {
       title: "Drainage Improvements",
       images: [
-        "/images/Projects/488/1.jpg",
         "/images/Projects/488/2.jpg",
         "/images/Projects/488/3.jpg",
         "/images/Projects/488/4.jpg",

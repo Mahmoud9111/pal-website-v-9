@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const cards = [
   {
-    id: 2,
+    id: 8,
     title: 'Drainage Improvements',
-    image: '/images/Projects/488/1.jpg',
+    image:  "/images/Projects/364/3.JPG",
   },
   {
     id: 10,

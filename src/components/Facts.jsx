@@ -5,8 +5,8 @@ export default function Facts() {
   const containerRef = useRef(null);
 
   const stats = [
-    { number: "17K+", label: "Satisfied Customers", bg: "bg-gray-100" },
-    { number: "25+", label: "Year of Experience", bg: "bg-gray-100" },
+    { number: "17+", label: "Year of Experience", bg: "bg-gray-100" },
+    { number: "600+", label: "Project Completed", bg: "bg-gray-100" },
     { number: "150+", label: "Award Winning", bg: "bg-gray-100" },
     { number: "25+", label: "Property Collections", bg: "bg-gray-100" },
   ]
