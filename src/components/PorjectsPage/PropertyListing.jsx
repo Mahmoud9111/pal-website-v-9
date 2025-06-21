@@ -79,7 +79,7 @@ export default function PropertyListing() {
     },
 
     4: {
-      title: "Pave. Maint and Repair",
+      title: "Admin Front Entrance Concrete Repair",
       images: [
         "/images/Projects/460/1.jpeg",
         "/images/Projects/460/2.jpeg",
@@ -95,7 +95,7 @@ export default function PropertyListing() {
     },
 
     5: {
-      title: "Pave. Maint and Repair",
+      title: "Pedestrian Mobility Sidewalk Project",
       images: [
         "/images/Projects//408/1.JPG",
         "/images/Projects//408/2.JPG",
