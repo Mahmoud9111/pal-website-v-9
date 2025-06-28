@@ -28,7 +28,7 @@ export default function Projects() {
       name: "Drainage Improvements",
       location: "",
 
-      image: "/images/Projects/488/1.jpg",
+      image: "/images/Projects/488/2.jpg",
       bedrooms: "Four",
       bathrooms: "Three",
       area: "1,024 ft",

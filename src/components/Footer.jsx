@@ -77,7 +77,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm sm:text-base text-gray-600 hover:text-gray-500"
                 >
-                 Address: 9939 Hibert St. Ste 201 San Diego, CA, 92131
+                 9939 Hibert St. Ste 201 San Diego, CA, 92131
                 </a>
               </li>
             </ul>
