@@ -2,12 +2,13 @@ import React from 'react';
 
 const Loader = () => {
   return (
-    <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white bg-opacity-60 backdrop-blur-sm z-50">
-      <div className="relative">
-        <div className="animate-spin rounded-full h-24 w-24 border-4 border-t-blue-500 border-r-blue-400 border-b-blue-300 border-l-blue-200 transition-all duration-300 ease-in-out shadow-lg"></div>
-        <div className="absolute top-0 left-0 h-24 w-24 rounded-full animate-pulse bg-blue-100 opacity-30"></div>
-      </div>
+<div className="flex flex-col gap-4 w-full min-h-screen items-center justify-center">
+  <div className="w-28 h-28 border-8 text-blue-600 text-4xl animate-spin border-gray-300 flex items-center justify-center border-t-blue-600 rounded-full">
+    <div  height="1em" width="1em" className="animate-ping">
+        <img src="./images/loaderimg.png" width={36} height={36} alt="" />
     </div>
+  </div>
+</div>
   );
 };
 
