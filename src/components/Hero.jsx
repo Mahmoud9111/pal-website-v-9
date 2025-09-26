@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { ArrowUpRight } from 'lucide-react'
 import { Link } from "react-router-dom"  // Add this import
 
-export default function AboutSection() {
+export default function Hero() {
   const [shrinkFactor, setShrinkFactor] = useState(1)
   const [borderRadius, setBorderRadius] = useState(0)
 

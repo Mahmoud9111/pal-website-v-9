@@ -1,29 +1,19 @@
 "use client"
 
 import { useState } from "react"
-import { Card } from "@/components/ui/card"
 import { CardProj } from "@/components/ui/cardProj"
 import { Button } from "@/components/ui/button"
 import {
-  Wrench,
   Clock,
   SquareStack,
-  HardDriveDownload,
-  Share2,
-  Bookmark,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
-  Building2,
   Construction,
   Hammer,
 } from "lucide-react"
 import { useParams } from "react-router-dom"
 
-// Mock Image component
-const Image = ({ src, alt, layout, className }) => (
-  <img src={src} alt={alt} className={className} />
-);
 
 export default function PropertyListing() {
   const { id } = useParams();
