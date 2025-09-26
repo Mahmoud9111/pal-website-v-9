@@ -14,5 +14,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: '/', // Set this to '/' for production
+  base: './', // Using relative paths for production compatibility
 })

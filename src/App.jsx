@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Home from "./components/Home";
 import Projects from './components/PorjectsPage/projects.jsx';
@@ -44,7 +44,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <Router>
         <ScrollToTop />
         <div className="App">
           {isLoading ? (
@@ -63,7 +63,7 @@ function App() {
             </Layout>
           )}
         </div>
-      </BrowserRouter>
+      </Router>
     </ThemeProvider>
   );
 }
